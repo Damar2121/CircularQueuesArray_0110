@@ -102,6 +102,7 @@ int main() {
 	while (true) {
 		try {
 			cout << "menu" << endl;
+			cout << "1. implement insert operation" << endl;
 		}
 	}
 }
