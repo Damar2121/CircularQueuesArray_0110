@@ -107,6 +107,15 @@ int main() {
 			cout << "3. display values" << endl;
 			cout << "4. exit" << endl;
 			cin >> ch;
+
+			switch (ch) {
+			case '1': {
+				
+				q.insert();
+				break;
+			}
+					case '2'
+			}
 		}
 	}
 }
