@@ -99,5 +99,9 @@ int main() {
 	Queues q;
 	char ch;
 
-	while (true)
+	while (true) {
+		try {
+			cout << "menu" << endl;
+		}
+	}
 }
