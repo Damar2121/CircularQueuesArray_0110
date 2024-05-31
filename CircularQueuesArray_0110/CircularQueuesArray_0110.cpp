@@ -106,6 +106,7 @@ int main() {
 			cout << "2. implement delete operation" << endl;
 			cout << "3. display values" << endl;
 			cout << "4. exit" << endl;
+			cin >> ch;
 		}
 	}
 }
