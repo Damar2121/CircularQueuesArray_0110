@@ -76,6 +76,7 @@ public:
 		if (FRONT_position <= REAR_position) {
 			while (FRONT_position <= REAR_position) {
 				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
 			}
 			cout << endl;
 		}
@@ -83,12 +84,14 @@ public:
 			// jika FRONT_position > REAR_position, iterasi FRONT hingga akhir array
 			while (FRONT_position <= max - 1) {
 				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
 			}
 			FRONT_position = 0;
 
 			// iterasi dari awal array hingga REAR
 			while (FRONT_position <= REAR_position) {
 				cout << queue_array[FRONT_position] << "  ";
+				FRONT_position++;
 			}
 			cout << endl;
 		}
@@ -106,6 +109,7 @@ int main() {
 			cout << "2. implement delete operation" << endl;
 			cout << "3. display values" << endl;
 			cout << "4. exit" << endl;
+			cout << "Enter your choice (1-4)" << endl;
 			cin >> ch;
 
 			switch (ch) {
@@ -131,5 +135,10 @@ int main() {
 			}
 			}
 		}
+		catch (exception& e) {
+			cout << "check for the values entered. " << endl;
+		}
 	}
+
+	return 0;
 }
